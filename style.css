@@ -550,7 +550,7 @@ nav ul li a:hover{
     list-style: inside;
 }
 .text-box input[type="checkbox"]:checked ~ .content{
-    max-height: 1000px;
+    max-height: 2500px;
 }
 .text-box input[type="checkbox"]:checked ~ label .see-more::before{
     content: 'See less';
@@ -938,7 +938,7 @@ nav .bi-x-square-fill, .bi-list{
         background: #CFC0E8;
         position: fixed;
         top: 0;
-        right: 200px;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
