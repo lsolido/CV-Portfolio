@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio by Eli</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">        
+        <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!---- HEADER ---->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <i class="bi bi-box-fill logo"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <i class="bi bi-x-square-fill" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="bi bi-list" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+        <!---- HOME ---->
+        <div id="home">
+            <div class="container">
+                <div class="header-text">
+                    <h1>Hello, I'm Eli</h1>
+                    <p>Marketing Professional</p>
+                    <div class="btn_container">
+                        <button class="btn" onclick="window.open('./files/my-cv.pdf')">Download CV</button>
+                        <a href="#contact"><button class="btn">Contact Me</button></a>
+                    </div>
+                    <div class="socials">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="images/profile_face.png">
+                </div>
+            </div>
+        </div>
+        <!---- ABOUT ---->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./images/user-01.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Eli is a seasoned and well-rounded marketer with 7 years of experience and a knack for content strategy),
+                            branding and identity, lead generation for leading B2B companies in technology, SaaS, energy and
+                            oil, construction and certification body.</p><br>
+                        <p>She loves working with brands and helping them share their message across the audience through integrated multi-channel marketing.</p><br>
+                        <p>Eli worked for B2B companies in the energy & oil, construction, SaaS, Information Technology, National Standards Body. She also worked with brands in cleaning services, beauty and health and sports.</p><br>
+                        <p>Eli is passionate about all of the work she does and holds the skills of being creative, analytical, organized, responsible, collaborative and result-driven.</p><br>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p> 
+                            <p class="tab-links" onclick="opentab('language')">Language</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>AB Mass Communication</span><br>Bulacan State University - 2015</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="language">
+                            <ul>
+                                <li><span>English</span></li>
+                                <li><span>Tagalog</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---- SKILLS ---->
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="skill-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum fugiat totam sint voluptatum quasi mollitia delectus consequatur. Aut placeat iure corporis voluptatem rem illo, officiis saepe recusandae harum porro!</p>
+                </div>
+                <div class="key-skills">
+                    <div class="skill">
+                        <img src="images/analytics.png">
+                        <h3>Marketing Analytics</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="images/strategy.png">
+                        <h3>Strategic Marketing</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="images/socialmedia.png">
+                        <h3>Social Media Management</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="images/email.png">
+                        <h3>Email Marketing</h3> 
+                    </div>
+                    <div class="skill">
+                        <img src="images/searchengine.png">
+                        <h3>Search Engine Marketing</h3>
+                    </div>    
+                    <div class="skill">
+                        <img src="images/leadership.png">
+                        <h3>Team Leadership</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="images/writing.png">
+                        <h3>Writing & Editing</h3>
+                    </div>
+                    <div class="skill">
+                        <img src="images/design.png">
+                        <h3>Design and Branding</h3>
+                    </div>   
+                </div>
+                <h1 class="sub-title">Marketing Tools</h1>
+                <div class="marketing-tools">
+                    <div>
+                        <img src="images/google_analytics.png" alt="Google Analytics">
+                        <p>Google Analytics</p>
+                    </div>
+                    <div>
+                        <img src="images/google_ads.png" alt="Google Ads">
+                        <p>Google Ads</p>
+                    </div>
+                    <div>
+                        <img src="images/hubspot.png" alt="Hubspot">
+                        <p>Hubspot</p>
+                    </div>
+                    <div>
+                        <img src="images/pardot.png" alt="Pardot">
+                        <p>Pardot</p>
+                    </div>
+                    <div>
+                        <img src="images/sproutsocial.png" alt="Sprout Social">
+                        <p>Sprout Social</p>
+                    </div>
+                    <div>
+                        <img src="images/episerver.png" alt="Episerver">
+                        <p>Episerver</p>
+                    </div>
+                    <div>
+                        <img src="images/elementor.png" alt="Wordpress: Elementor">
+                        <p>Elementor</p>
+                    </div>
+                    <div>
+                        <img src="images/photoshop.png" alt="Adobe Photoshop">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!---- EXPERIENCE ---->
+        <div id="experience">
+            <h1 class="sub-title">Experience</h1>
+            <div class="exp-container" id="cd-timeline">
+                <div class="right-container">
+                    <img src="images/enm.jpg">
+                    <div class="text-box">
+                        <input type="checkbox" name="accordion" id="first">
+                        <div class="text-box-info">
+                            <!--<label for="first"> -->
+                            <h2>Marketing Officer</h2>                            
+                            <span class="text-box-info-company">
+                                <i class="bi bi-person-badge-fill"></i>
+                                Executive Networks Media, Pte. Ltd.
+                            </span>
+                            <span class="text-box-info-date">
+                                <i class="bi bi-calendar2-event-fill"></i>
+                                February 2015 - January 2017
+                            </span>
+                            <span class="right-container-arrow"></span>
+                            <!--</label>-->
+                        </div>
+                        <ul class="content-skills">
+                            <li>Google Analytics</li>
+                            <li>Google Ads</li>
+                            <li>Hubspot</li>
+                        </ul>
+                        <div class="content">
+                            <ul>
+                                <li>Contribute in the implementation of marketing strategies</li>
+                                <li>Support the Country Manager in overseeing the department’s operations</li>           
+                                <li>Organize and attend marketing activities or events to raise brand awareness</li>
+                                <li>Plan advertising and promotional campaigns for products or services on a variety of
+                                    media (social, print etc.)</li>
+                                <li>Liaise with stakeholders and vendors to promote success of activities and enhance the
+                                    company’s presence</li>
+                                <li>See all ventures through to completion and evaluate their success using various
+                                    metrics</li>
+                                <li>Prepare content for the publication of marketing material and oversee distribution</li>
+                                <li>Conduct market research to identify opportunities for promotion and growth</li>
+                                <li>Responsible for lead generation activities thru cold-calling, updating the data base and
+                                    market research using CRM tools (Salesforce)</li>
+                                <li>Implements team campaigns as instructed by the Country Manager by conducting b2b
+                                    marketing, cold-calling to obtain leads</li>
+                                <li>Sends out e-invites and securing top-level VIP delegate seats for series of summits,
+                                    conferences, executive, dialogues, roundtable discussion across multiple cities in Asia
+                                    Pacific.</li>
+                            </ul>
+                        </div>
+                        <label for="first">
+                            <p class="see-more"></p>
+                        </label>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img src="images/primebmd.png">
+                    <div class="text-box">
+                        <input type="checkbox" name="accordion" id="second">
+                        <div class="text-box-info">
+                                <h2>Group Marketing and Communications Officer</h2>
+                                <span class="text-box-info-company">
+                                    <i class="bi bi-person-badge-fill"></i>
+                                    Prime Metro BMD Corporation
+                                </span>
+                                <span class="text-box-info-date"><i class="bi bi-calendar2-event-fill"></i>February 2017 - March 2020</span>
+                                <span class="right-container-arrow"></span>
+                        </div>
+                        <ul class="content-skills">
+                            <li>Google Analytics</li>
+                            <li>Google Ads</li>
+                            <li>Hubspot</li>
+                        </ul>
+                        <div class="content">
+                            <ul>
+                                <li>Updates company's bulletin with upcoming events such as birthdays, holidays and
+                                    employee relations activities</li>
+                                <li>Conceptualizes company events such as year-end parties, press conferences, project
+                                    launching, etc. for the group of companies</li>
+                                <li>Sends out announcements and information through out the organization</li>
+                                <li>Manages and updates content, look and feel of the group companies' websites and
+                                    social media accounts (LinkedIn, Facebook and Twitter)</li>
+                                <li>Develops and manages the company's internal and external communications system
+                                    to distribute company news, announcements and critical information</li>
+                                <li>Creates appealing designs for posters, announcements brochures, banners, corporate
+                                    items, and marketing collateral.</li>
+                                <li>Assist the Head of Marketing, Communications and Corporate Social Responsibility in
+                                    planning, organizing and execution of CSR initiatives</li>
+                                <li>Coordination and logistics of pre-event, event and post event</li>
+                                <li>Preparation of post mortem campaign and events reports</li>
+                            </ul>
+                        </div>
+                        <label for="second">
+                            <p class="see-more"></p>
+                        </label>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img src="images/ducen.png">
+                    <div class="text-box">
+                        <input type="checkbox" name="accordion" id="third">
+                        <div class="text-box-info">
+                            <h2>Associate Brand Marketing and Communications Manager</h2>
+                            <span class="text-box-info-company">
+                                <i class="bi bi-person-badge-fill"></i>
+                                Ducen Infotek, Inc.
+                            </span>
+                            <span class="text-box-info-date"><i class="bi bi-calendar2-event-fill"></i>March 2020 - March 2021</span>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                        <ul class="content-skills">
+                            <li>Google Analytics</li>
+                            <li>Google Ads</li>
+                            <li>Hubspot</li>
+                        </ul>
+                        <div class="content">
+                            <ul>
+                                <li>Develop social media strategy that builds brand credibility and improve web traffic
+                                    quality.</li>
+                                <li>Manage CRM tools for branding and communications</li>
+                                <li>Create and maintain social media calendar, including writing social media posts across
+                                    various platforms (Facebook, Twitter, LinkedIn, YouTube, Quora etc).
+                                    </li>
+                                <li>Build engagement on social media and 3rd party as well as interact with influencers to
+                                    build brand.</li>
+                                <li>Manage brand reputation across social media and company review sites.</li>
+                                <li>Support to build and run social media ads, sponsorship and lead generation activities
+                                    and contributes creatively to developing and testing new ideas for social outreach.</li>
+                                <li>Analyzing the success of marketing campaigns that have been established and
+                                    developed.</li>
+                                <li>Work with the marketing team to deliver the correct company brand messaging across
+                                    all marketing activities (website, social media, SEO link building, content generation,
+                                    sales enablement).</li>
+                                <li>Provide direction to the graphics team on the creation of images to support social
+                                    content.</li>
+                                <li>Organize and manage the process from audience acquisition to post webinar followup and provide support for marketing events and exhibitions as required</li>
+                                <li>Assist with the collation of information for RFPs, and promotional content.</li>
+                                <li>Assists with project management for new product development process from concept
+                                    to launch</li>
+                                <li>Leads in executing product launches and promotions</li>
+                                <li>Works with Product team and project management to develop product decks to
+                                    ensure successful launches and when needed, in support of category reviews</li>
+                                <br>
+                                <li>Support internal communications – newsletters and employee engagements</li>
+                                <li>Write internal marketing content and establish brand voice internally</li>
+                                <li>Support sales and marketing team with ad hoc projects as requested.</li>
+                            </ul>
+                        </div>
+                        <label for="third">
+                            <p class="see-more"></p>
+                        </label>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img src="images/bsi.png">
+                    <div class="text-box">
+                        <input type="checkbox" name="accordion" id="fourth">
+                        <div class="text-box-info">
+                            <h2>Marketing Head</h2>
+                            <span class="text-box-info-company">
+                                <i class="bi bi-person-badge-fill"></i>
+                                BSI Group Philippines, Inc.
+                            </span>
+                            <span class="text-box-info-date"><i class="bi bi-calendar2-event-fill"></i>June 2021 - April 2022</span>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                        <ul class="content-skills">
+                            <li>Google Analytics</li>
+                            <li>Google Ads</li>
+                            <li>Hubspot</li>
+                        </ul>
+                        <div class="content">
+                            <ul>
+                                <li>Based on market insight, BSI marking policies and approaches, and best practices,
+                                    recommend appropriate marketing channels to ensure messaging reaches the
+                                    intended audience in the most effective way.</li>
+                                <li>Develop, plan, execute and measure communications campaigns newsletters, email
+                                    shots, search engine marketing, web content, brochure collateral, direct mail, social
+                                    media, events & seminars, posters to meet the plans determined by our client
+                                    propositions managers and to align with the BSI style guide.
+                                    </li>
+                                <li>Maximize the usage of BSI’s products and services content across various
+                                    communication channels to ensure optimum reach and ROI.</li>
+                                <li>Create, promote and deliver events including exhibitions, conferences & seminars and
+                                    represent BSI’s at key industry events, client events and meetings, and sales visits to
+                                    promote the BSI group to potential clients.</li>
+                                <li>Evaluate, measure, and analyze campaigns to assess their effectiveness using
+                                    appropriate tools and record lessons learned.</li>
+                                <li>Manage and work with approved agencies/suppliers to deliver high-quality campaigns</li>
+                                <li>Arrange for the effective distribution of marketing materials internally and externally
+                                    to maximize the impact of campaigns</li>
+                                <li>Conduct list research, list sourcing, and list building to increase the impact of
+                                    marketing campaigns</li>
+                                <br>
+                                <li>Manage CRM tools to generate and manage leads, campaigns and website content</li>
+                                <li>Define, create, edit and manage optimized content across all relevant BSI websites
+                                    (including building microsites, email marketing, search engine optimization, banner
+                                    advertising, and other online marketing techniques) to promote BSI’s range of
+                                    products and services, meeting revenue and margin targets.</li>
+                                <li>Plan and execute marketing campaigns for products and services using online
+                                    marketing techniques to achieve revenue and lead generation targets for specific
+                                    products and services online.</li>
+                                <li>Consider submissions to search engines and use metatags and relevant SEO elements
+                                    to allow easy search engine access such as heading tags; special text, inline text links,
+                                    and keyword density.</li>
+                                <li>Examine ways of structuring the site for SEO and content with the designer and
+                                    usability expert to test new concepts.</li>
+                                <li>Monitor all SEO and content optimization activities including monitoring links,
+                                    ranking, and changes in the search engine environment.</li>
+                                <li>Liaise with other parts of the marketing organization to ensure cross-promotion and
+                                    full portfolio exposure where relevant.</li>
+                                <li>Manage, devise and maintain Google Ads and generate and interpret report thru
+                                    Google Analytics</li>
+                                <li>Coordinate live-streaming events and webinars with stakeholders and partners</li>
+                                <br>
+                                <li>Develop road map & strategically plan & implementation of corporate affairs activities like
+                                    PR/Liaison & Media relations etc.</li>
+                                <li>To identify opportunities to enhance the image of the company by associating with certain
+                                    events.</li>
+                                <li>Monitor press release, write-ups and media pick ups online and offline</li>
+                            </ul>
+                        </div>
+                        <label for="fourth">
+                            <p class="see-more"></p>
+                        </label>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <img src="images/amco.png">
+                    <div class="text-box">
+                        <input type="checkbox" name="accordion" id="fifth">
+                        <div class="text-box-info">
+                            <h2>Digital Marketing</h2>
+                            <span class="text-box-info-company">
+                                <i class="bi bi-person-badge-fill"></i>
+                                AMCO Solutions, Inc.
+                            </span>
+                            <span class="text-box-info-date"><i class="bi bi-calendar2-event-fill"></i></i>August 2021 - Present</span>
+                            <span class="right-container-arrow"></span>
+                        </div> 
+                        <ul class="content-skills">
+                            <li>Google Analytics</li>
+                            <li>Google Ads</li>
+                            <li>Hubspot</li>
+                        </ul>                           
+                        <div class="content">
+                            <ul>
+                                <li>Plan and execute all digital marketing, including SEO/SEM, marketing database, email,
+                                    social media and display advertising campaigns</li>
+                                <li>Work with internal marketing teams and external suppliers to drive successful
+                                    execution of the campaigns</li>
+                                <li>Create and monitor email marketing campaigns</li>
+                                <li>Monitor activity, answer questions, create content, analyze trends, and resolve issues
+                                    on social media channels</li>
+                                <li>Measure and report on web traffic and source analytics against goals.</li>
+                                <li>Work on pre-designated content, as well as create original content for social media,
+                                    website, email and events</li>
+                                <li>Decide on appropriate placement of ads (PPC, social media ads)</li>
+                                <li>Identify trends and insights, and optimize spend and performance based on the
+                                    insights</li>
+                                <li>Brainstorm new and creative growth strategies</li>
+                                <li>Manage digital portfolio (e.g., Brochures, social media banners, whitepapers)</li>
+                                <li>Other duties as assigned by the management team</li>
+                                <li>Generate and manage marketing qualified leads</li>
+                                <br>
+                                <li>Collaborate with internal teams and external partners for ideation, planning and
+                                    execution of events and campaigns</li>
+                                <li>Foster strategic alliance with clients and partners</li>
+                                <li>Creating and managing campaigns designed to build brand awareness and generate
+                                    marketing qualified leads, then convert them into sales qualified leads</li>
+                                <li>Developing strategies to increase retention through upselling, cross-selling, and
+                                    creating relationship plans</li>
+                            </ul>
+                        </div>
+                        <label for="fifth">
+                            <p class="see-more"></p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---- PORTFOLIO ---->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <h2 class="port-sub-title">Brands</h2>
+                <div class="brands-text">
+                    <p>Eli is skilled and has worked with several
+                        brands from different industries
+                    </p>
+                </div>
+                <div class="brands">
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/ducen.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/primeinfra.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/primebmd.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/mariefrance.jpg">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/enm.jpg">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/amco.PNG">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/sproutsocial.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/ABL.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+                            <img src="images/bsi.png">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="port-sub-title">Website</h2>
+                <div class="website-text">
+                    <p>Eli is skilled and has broad experience
+                        within curating and managing of content
+                        for website.
+                    </p>
+                    <p>She also works with and oversee creatives
+                        team to make sure the design and
+                        branding is aligned with the business.
+                    </p>
+                </div>
+                <div class="website-list">
+                    <div class="website">
+                        <img src="images/ducen_grab.png" class="website-img">
+                        <div class="layer">
+                            <h3>Ducen Infotek, Inc.</h3>
+                            <a href="https://ducenit.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/bsi_grab.png" class="website-img">
+                        <div class="layer">
+                            <h3>BSI Group Philippines, Inc.</h3>
+                            <a href="https://www.bsigroup.com/en-PH/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/primeinfra_grab.png" class="website-img">
+                        <div class="layer">
+                            <h3>Prime Infra</h3>
+                            <a href="https://primeinfra.ph/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="website">
+                        <img src="images/amco_grab.png" class="website-img">
+                        <div class="layer">
+                            <h3>AMCO Solutions, Inc.</h3>
+                            <a href="https://www.amco.one/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="port-sub-title">Events</h2>
+                <div class="event-list">
+                    <div class="text-wrapper">
+                        <p>Eli has planned and executed events and
+                            campaigns to help companies launch their
+                            products and grow their online presence.</p>
+                        <p>Onsite and online events aligned with the
+                            brand's strategy. These events and
+                            campaigns are presented through
+                            integrated marketing channels</p>
+                        <br>
+                        <p>Event Types:</p>
+                        <li>Webinars</li>
+                        <li>Contract Signing</li>
+                        <li>Seminars</li>
+                        <li>Roundtables</li>
+                    </div>
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                            <div class="carousel-item">
+                                <img src="images/event_01.PNG">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="images/event_02.PNG">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="images/event_03.PNG">
+                            </div>
+                            <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                            <div class="carousel-item">
+                                <img src="images/event_04.PNG">
+                            </div>
+                            <label for="carousel-4" class="carousel-control prev control-1">‹</label>
+                            <label for="carousel-2" class="carousel-control next control-1">›</label>
+                            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                            <label for="carousel-3" class="carousel-control next control-2">›</label>
+                            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                            <label for="carousel-4" class="carousel-control next control-3">›</label>
+                            <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+                            <label for="carousel-1" class="carousel-control next control-4">›</label>
+                            <ol class="carousel-indicators">
+                                <li>
+                                    <label for="carousel-1" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-2" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-3" class="carousel-bullet">•</label>
+                                </li>
+                                <li>
+                                    <label for="carousel-4" class="carousel-bullet">•</label>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="contact-list">
+                    <div class="contact">
+                        <i class="bi bi-telephone-fill"></i>
+                        <p>+63 999 999 9999</p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-envelope-fill"></i>
+                        <p>sample@gmail.com</p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-facebook"></i>
+                        <p>/face.book</p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-instagram"></i>
+                        <p>/insta.gram</p>
+                    </div>
+                    <div class="contact">
+                        <i class="bi bi-linkedin"></i>
+                        <p>/linked.in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="bi bi-c-circle"></i>. Made by Louel D Solido</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0"
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+        </script>
+    </body>
+</html>
